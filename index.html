@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <title>睡眠困擾評估測</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="questions">
+        <div>
+          <p><strong>1. 評估近兩週內是否有「入睡困難」的嚴重程度：</strong></p>
+          <input type="radio" name="question1" value="0">無
+          <input type="radio" name="question1" value="1">輕度
+          <input type="radio" name="question1" value="2">中度
+          <input type="radio" name="question1" value="3">重度
+          <input type="radio" name="question1" value="4">非常嚴重
+          <hr>
+        </div>
+        <div>
+          <p><strong>2. 評估近兩週內是否有「很難保持入睡」的嚴重程度：</strong></p>
+          <input type="radio" name="question2" value="0">無
+          <input type="radio" name="question2" value="1">輕度
+          <input type="radio" name="question2" value="2">中度
+          <input type="radio" name="question2" value="3">重度
+          <input type="radio" name="question2" value="4">非常嚴重
+        </div>
+        <hr>
+        <div>
+          <p><strong>3. 評估近兩週內是否有「太早醒來」的嚴重程度：</strong></p>
+          <input type="radio" name="question3" value="0">無
+          <input type="radio" name="question3" value="1">輕度
+          <input type="radio" name="question3" value="2">中度
+          <input type="radio" name="question3" value="3">重度
+          <input type="radio" name="question3" value="4">非常嚴重
+          <hr>
+        </div>
+        <div>
+          <p><strong>4. 您滿意自己最近的睡眠狀態嗎？</strong></p>
+          <input type="radio" name="question4" value="0">非常滿意
+          <input type="radio" name="question4" value="1">滿意
+          <input type="radio" name="question4" value="2">中等
+          <input type="radio" name="question4" value="3">不滿意
+          <input type="radio" name="question4" value="4">非常不滿意
+          <hr>
+        </div>
+        <div>
+          <p><strong>5. 睡眠狀況是否會影響你的日常生活？（如：工作表現/日常瑣事、專注力、記憶力、情緒等）。</strong></p>
+          <input type="radio" name="question5" value="0">完全無干擾
+          <input type="radio" name="question5" value="1">一點點
+          <input type="radio" name="question5" value="2">稍微
+          <input type="radio" name="question5" value="3">很多
+          <input type="radio" name="question5" value="4">非常擔心
+          <hr>
+        </div>
+        <div>
+          <p><strong>6. 他人是否有注意到您的生活品質因睡眠問題受到影響？</strong></p>
+          <input type="radio" name="question6" value="0">完全沒注意
+          <input type="radio" name="question6" value="1">一點點
+          <input type="radio" name="question6" value="2">稍微
+          <input type="radio" name="question6" value="3">很多
+          <input type="radio" name="question6" value="4">非常擔心
+          <hr>
+        </div>
+        <div>
+          <p><strong>7. 最近的睡眠問題是否讓你感到擔心／困擾？</strong></p>
+          <input type="radio" name="question7" value="0">完全不擔心
+          <input type="radio" name="question7" value="1">一點點
+          <input type="radio" name="question7" value="2">稍微
+          <input type="radio" name="question7" value="3">很多
+          <input type="radio" name="question7" value="4">非常擔心
+          <hr>
+        </div>
+
+  </div>
+  
+  <button class="cta" onclick="calculateScore()">計算測驗結果</button>
+  <div id="result"></div>
+  <script src="app.js"></script>
+</body>
+
+</html>
+
+
